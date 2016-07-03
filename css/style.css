@@ -117,17 +117,17 @@ ul.menu > li:hover > ul.submenu {
 .country {
 
   top: 100px;
-  float: right;
+  float: left;
   position: absolute; 
-  right: 220px;
+  right: 300px;
 }	
 	
 .contact {
 
   top: 20px;
-  float: right;
+  float: left;
   position: absolute; 
-  right: 220px;
+  right: 300px;
   
 }	
 
