@@ -1,0 +1,137 @@
+body {
+    font: 12px 'Verdana';
+    margin: 0;
+    padding: 0;
+	background-image: url(../img/fon.png);
+	height: 1100px;
+}
+ul {
+    width: 100%;
+	display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+	width: 142.8px;
+    text-align: center; 
+	}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #343434;
+	text-decoration: underline;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid black;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.fon {
+
+  width: 1000px; /* ширина трех блоков */
+  background-color: white;
+  float: left; /* чтобы не добавлять div с style="clear:both;" (не всегда уместно это применять) */
+  padding: 0px;
+  
+}
+
+.leftColumn {
+
+  width: 200px;
+  height: 505px;
+  background-color: #EDEEF0;
+  float: left;
+  padding: 15px;
+
+}
+
+.centerColumn {
+
+  width: 400px;
+  float: left;
+
+}
+
+.rightColumn {
+
+  width: 200px;
+  height: 505px;
+  float: right;
+  background-color: #EDEEF0;
+  padding: 15px;
+  
+}
+
+.content {
+    /* position: absolute; overflow: auto; padding: 0px;*/
+    position: absolute;
+	padding: 0px;
+	top: 45px; /* Расстояние от верхнего края */
+    left: 151px; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+	}
+	
+.logo {
+
+  padding-left: 25px;
+  float: left;
+}
+
+.country {
+
+  top: 100px;
+  float: right;
+  position: absolute; 
+  right: 220px;
+}	
+	
+.contact {
+
+  top: 20px;
+  float: right;
+  position: absolute; 
+  right: 220px;
+  
+}	
+
+.letter { 
+     color: 9ACDDA;
+	 font-weight: bold;
+}
