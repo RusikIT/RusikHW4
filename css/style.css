@@ -1,159 +1,168 @@
-blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{padding:0;margin:0}table{border-collapse:collapse;border-spacing:0}abbr,acronym,fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}q:after,q:before{content:''}
-
 body {
-    background: #f9f9f9;
-    
+    font: 12px 'Verdana';
+    margin: 0;
+    padding: 0;
+	background-image: url(../img/fon.png);
+	height: 1060px;
 }
 
-.container {
-    max-width: 1060px;
-    box-sizing: border-box;
-    margin: auto;
-    background: #fff;
-    box-shadow: 0 0 4px #afafaf;
-    padding: 50px 45px 60px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-size: 14px;
+
+ul {
+    width: 100%;
+	display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
+ul:after {
+    display: block;
+    content: ' ';
     clear: both;
+    float: none;
 }
-
-.header {
-    margin-bottom: 40px;
-}
-
-
-.menu {
-    background: linear-gradient(to top, #444343, #5e5e5e);
-    margin-bottom: 40px;
-}
-
-.menu li {
-    display: inline-block;
-    padding: 13px 0;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    transition: 0.5s all;
-}
-
-.menu li:first-child {
-    margin-right: -1px;
-}
-
-.menu li:hover {
-    border-left: 1px solid #838383;
-    border-right: 1px solid #838383;
-    background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-}
-.menu .active {
-    border-left: 1px solid #838383;
-    border-right: 1px solid #838383;
-    background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    padding: 13px 25px;
-}
-
-
-.sidebar {
-    width: 242px;
-    float: left
-}
-
-.sidebar li {
-    border: 1px solid #c8c8c8;
-    margin-bottom: -1px;
-}
-
-.sidebar a {
-    color: #7f7d7d;
-    text-decoration: none;
-    width: 240px;
-    height: 40px;
-    display: block;
-    box-sizing: border-box;
-    line-height: 40px;
-    padding-left: 23px;
-    transition: all 0.2s;
-}
-
-.active_sidebar a {
-    background: #f9f9f9;
-    padding-left: 35px;
-    color: #2c2c2c;
-}
-
-.sidebar a:hover {
-    background: #f9f9f9;
-    padding-left: 35px;
-    color: #2c2c2c;
-}
-
-.content {
-    max-width: 680px;
-    float: right;
-}
-
-.image {
-    max-width:  678px;
-    height: 340px;
-    box-sizing: border-box;
-    border: 1px solid #c8c8c8;
-}
-
-.image img {
-    display: block;
-    margin: 5px auto;
-}
-
-.description {
-    padding: 40px 22px 61px;
-    
-}
-
-.description p {
-    line-height: 1.6;
-    
-}
-
-.footer {
-    background: #e1e1e1;
-    padding: 0 26px;
-    
-}
-
-.menu_footer {
+ul.menu > li {
     float: left;
-}
-
-.menu_footer li {
-    display: inline-block;
-    padding: 16px 0;
-}
-
-.menu_footer a {
+    position: relative;
+	width: 142.8px;
+    text-align: center; 
+	}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+	height: 18px;
+    color: white;
+    background-color: #343434;
     text-decoration: none;
-    margin-right: 93px;
-    color: #2c2c2c;
+}
+ul.menu > li > a:hover {
+    background-color: #343434;
+	text-decoration: underline;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid black;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
 }
 
-.menu_footer a:hover {
-    border-bottom: 1px solid #686868;
+ul.menu > li:hover > ul.submenu {
+    display: block;
 }
 
-.active_footer a {
-    border-bottom: 1px solid #686868;
+.fon {
+/*     position: absolute;
+ */    padding: 0px;
+/* 	top: 35px; /* Расстояние от верхнего края */
+/*     left: 0px; /* Расстояние от левого края */ 
+/*  */    width: 1000px; /* ширина трех блоков */ 
+    background-color: white;
+    float: left; /* чтобы не добавлять div с style="clear:both;" (не всегда уместно это применять) */
+    margin 0 auto;
+	overflow: hidden;
+  
+  
 }
 
-.copyright {
-    float: right;
-    line-height: 45px;
+.leftColumn  {
+
+  width: 20%;
+  height: 510px;
+  background-color: #EDEEF0;
+  float: left;
+  padding: 15px;
+
+}
+
+.centerColumn {
+
+  width: 60%;
+  /*float: left;*/
+  margin 0 auto;
+
+}
+
+.rightColumn {
+
+  width: 20%;
+  height: 510px;
+  float: right;
+  background-color: #EDEEF0;
+  padding: 15px;
+  
+}
+
+.menublock {
+    /* position: absolute; overflow: auto; padding: 0px;*/
+    position: relative;
+	width: 100%;
+	padding: 0px;
+	top: 165px; /* Расстояние от верхнего края */
+    left: 0px; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+	}
+	
+.content {
+    /* position: absolute; overflow: auto; padding: 0px;*/
+    position: relative;
+	width: 1000px;
+	padding: 0px;
+	top: 45px; /* Расстояние от верхнего края */
+    left: 151px; /* Расстояние от левого края */ 
+	}
+	
+.header {
+    position: absolute;
+/* 	width: 83.5%;
+ */	padding: 0px;
+	top: 0px; /* Расстояние от верхнего края */
+    left: 0px; /* Расстояние от левого края */ 
+	}
+	
+.logo {
+  position: absolute;
+  left: 25px;
+ top: 0px;
+}
+
+.logo2 {
+  position: relative;
+  left: 0px;
+ top: 168px;
+}
+.country {
+
+  position: absolute; 
+  top: 100px;
+  left: 650px;
+}	
+	
+.contact {
+
+  position: absolute;
+  top: 10px;
+  left: 815px;
+  width: 170px;
+  
+}	
+
+.letter { 
+     color: 9ACDDA;
+	 font-weight: bold;
 }
